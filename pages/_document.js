@@ -12,8 +12,8 @@ class MyDocument extends Document {
                     <meta name="robots" content="noindex, nofollow" />
                     <meta charSet="utf-8" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
-                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
-                    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet"></link>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+                    {/* <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet" /> */}
                 </Head>
                 <body>
                     <Main />
