@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 const Blog = (props) => {
     const links = ['angular', 'react', 'vuejs'];
-    function RenderPostLink (postname) {
-        return (<><li><Link href={`/post?title=${postname}`}><a>{postname} post</a></Link></li></>)
+    function RenderPostLink (slug, postname) {
+        return (<><li><Link as={slug+'-post'} href={`/post?title=${postname}`}><a>{postname} post</a></Link></li></>)
     }
     return(
         <>
         <Layout title='BLOG'>
             <ul>
-                {links.map(item => RenderPostLink(item))}
+                {links.map(item => RenderPostLink(item,item))}
             </ul>
         </Layout></>
     )
